@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Architects+Daughter&family=Indie+Flower&family=Shadows+Into+Light&family=Amatic+SC:wght@400;700&family=Coming+Soon&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #f8f8f8;
+  --foreground: #2c3e50;
+  --notebook-line: #c0c0c0;
+  --foundation-color: #e67e22;
+  --growth-color: #27ae60;
+  --scale-color: #8e44ad;
+  --enterprise-color: #3498db;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.125rem;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+.notebook-bg {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(90deg, var(--notebook-line) 1px, transparent 1px),
+    linear-gradient(var(--notebook-line) 1px, transparent 1px);
+  background-size: 35px 35px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.handwritten-title {
+  font-family: 'Caveat', cursive;
+  font-weight: 800;
+  color: #2c3e50;
+  line-height: 0.9;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero title with massive sizes */
+.hero-title {
+  font-family: 'Caveat', cursive;
+  font-weight: 900;
+  color: #2c3e50;
+  line-height: 0.85;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Responsive hero title sizes */
+.hero-title-sm { font-size: 6rem; }    /* 96px */
+.hero-title-md { font-size: 8rem; }    /* 128px */
+.hero-title-lg { font-size: 12rem; }   /* 192px */
+.hero-title-xl { font-size: 16rem; }   /* 256px */
+
+@media (max-width: 640px) {
+  .hero-title-sm { font-size: 4rem; }   /* 64px on mobile */
+  .hero-title-md { font-size: 5rem; }   /* 80px on mobile */
+  .hero-title-lg { font-size: 6rem; }   /* 96px on mobile */
+  .hero-title-xl { font-size: 7rem; }   /* 112px on mobile */
+}
+
+.handwritten-subtitle {
+  font-family: 'Kalam', cursive;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #34495e;
+  line-height: 1.3;
+}
+
+.handwritten-body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.handwritten-casual {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.handwritten-light {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5;
+}
+
+.handwritten-xs { font-size: 1rem; font-weight: 500; }
+.handwritten-sm { font-size: 1.125rem; font-weight: 500; }
+.handwritten-md { font-size: 1.375rem; font-weight: 600; }
+.handwritten-lg { font-size: 1.75rem; font-weight: 700; }
+.handwritten-xl { font-size: 2.25rem; font-weight: 700; }
+
+.text-foundation { color: var(--foundation-color); }
+.text-growth { color: var(--growth-color); }
+.text-scale { color: var(--scale-color); }
+.text-enterprise { color: var(--enterprise-color); }
+
+.text-notebook-dark { color: #2c3e50; }
+.text-notebook-medium { color: #7f8c8d; }
+.border-notebook-medium { border-color: #bdc3c7; }
+
+.bg-foundation { background-color: var(--foundation-color); }
+.bg-growth { background-color: var(--growth-color); }
+.bg-scale { background-color: var(--scale-color); }
+.bg-enterprise { background-color: var(--enterprise-color); }
+
+/* Sticky Navigation */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: 
+    /* Paper texture overlay */
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 108, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(200, 200, 200, 0.08) 0%, transparent 50%),
+    /* Subtle paper fibers */
+    repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 4px),
+    repeating-linear-gradient(-45deg, transparent, transparent 2px, rgba(0, 0, 0, 0.008) 2px, rgba(0, 0, 0, 0.008) 4px),
+    /* Base paper color */
+    rgba(252, 251, 248, 0.96);
+  backdrop-filter: blur(12px) saturate(1.1);
+  border-bottom: 2px solid var(--notebook-line);
+  box-shadow: 
+    0 2px 10px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.sticky-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--notebook-line), transparent);
+}
+
+.sticky-nav::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Subtle paper grain */
+    repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(0, 0, 0, 0.005) 1deg, transparent 2deg),
+    /* Random paper spots */
+    radial-gradient(circle at 15% 25%, rgba(200, 195, 185, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 85% 75%, rgba(180, 175, 165, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 65% 15%, rgba(220, 215, 205, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 25% 85%, rgba(190, 185, 175, 0.03) 1px, transparent 1px);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Sketch underline effect for navigation */
+.sketch-underline {
+  position: relative;
+}
+
+.sketch-underline::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 3px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10'%3E%3Cpath d='M0,5 Q25,0 50,5 T100,5' stroke='%23e67e22' stroke-width='2' fill='none'/%3E%3C/svg%3E") repeat-x;
+  background-size: 100px 10px;
+}
+
+/* Line clamp utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
