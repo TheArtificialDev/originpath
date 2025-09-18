@@ -180,7 +180,7 @@ export default function ArticlePage({ categoryId, slug }: ArticlePageProps) {
               
               <p>
                 This section would discuss what these findings mean for businesses, organizations, 
-                or individuals in the relevant field. We'd explore practical applications and 
+                or individuals in the relevant field. We&apos;d explore practical applications and 
                 actionable insights that readers can implement.
               </p>
 

@@ -100,7 +100,7 @@ export default function CategoryPage({ categoryId }: CategoryPageProps) {
                 <>
                   Found <span className="text-foundation font-bold">{filteredItems.length}</span> result{filteredItems.length !== 1 ? 's' : ''} 
                   {searchTerm && (
-                    <> matching "<span className="text-foundation">{searchTerm}</span>"</>
+                    <> matching &quot;<span className="text-foundation">{searchTerm}</span>&quot;</>
                   )}
                 </>
               ) : (

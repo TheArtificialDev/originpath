@@ -40,7 +40,7 @@ export default function About() {
               <div className="handwritten-subtitle text-3xl md:text-4xl transform hover:rotate-1 
                             transition-all duration-300 text-foundation hover:text-growth mb-4
                             animate-fade-in-up">
-                Bridging the digital gap in India's startup ecosystem
+                Bridging the digital gap in India&apos;s startup ecosystem
               </div>
               {/* Typing cursor effect */}
               <span className="text-4xl text-foundation animate-pulse">|</span>
@@ -55,7 +55,7 @@ export default function About() {
                   1
                 </div>
                 <p className="handwritten-body text-xl leading-relaxed transform rotate-0.5 text-gray-800">
-                  OriginPath was born from a simple observation: India's vibrant startup ecosystem was missing 
+                  OriginPath was born from a simple observation: India&apos;s vibrant startup ecosystem was missing 
                   a crucial piece. While entrepreneurs had brilliant ideas and boundless energy, they struggled 
                   to access the research, strategic guidance, and operational support needed to transform concepts 
                   into sustainable digital businesses.
@@ -84,9 +84,9 @@ export default function About() {
                   3
                 </div>
                 <p className="handwritten-body text-xl leading-relaxed transform rotate-0.3 text-gray-800">
-                  Today, we're India's premier remote-first startup acceleration platform, empowering entrepreneurs 
+                  Today, we&apos;re India&apos;s premier remote-first startup acceleration platform, empowering entrepreneurs 
                   with comprehensive research, strategic partnerships, and end-to-end operational support. 
-                  From MVP development to scaling strategies, we've made it our mission to eliminate the digital 
+                  From MVP development to scaling strategies, we&apos;ve made it our mission to eliminate the digital 
                   vacuum that holds back so many promising ventures.
                 </p>
               </div>
@@ -108,7 +108,7 @@ export default function About() {
                     <p className="handwritten-body text-lg text-gray-700 leading-relaxed transform -rotate-0.2">
                       To democratize access to world-class startup resources, research, and strategic guidance 
                       for Indian entrepreneurs building digital products, thereby accelerating the growth of 
-                      India's technology ecosystem.
+                      India&apos;s technology ecosystem.
                     </p>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function About() {
                       Our Future
                     </h3>
                     <p className="handwritten-body text-lg text-gray-700 leading-relaxed transform rotate-0.2">
-                      To become India's premier digital-first startup acceleration platform, fostering innovation 
+                      To become India&apos;s premier digital-first startup acceleration platform, fostering innovation 
                       and empowering entrepreneurs with cutting-edge research, strategic partnerships, and 
                       comprehensive operational support.
                     </p>
@@ -180,8 +180,8 @@ export default function About() {
                     
                     <p className="transform -rotate-0.3 leading-relaxed text-gray-700">
                       His journey through multiple successful ventures has provided deep insights into what 
-                      works—and what doesn't—in India's startup ecosystem. This experience forms the foundation 
-                      of OriginPath's research-driven, practical approach to startup acceleration.
+                      works—and what doesn&apos;t—in India&apos;s startup ecosystem. This experience forms the foundation 
+                      of OriginPath&apos;s research-driven, practical approach to startup acceleration.
                     </p>
                   </div>
                   

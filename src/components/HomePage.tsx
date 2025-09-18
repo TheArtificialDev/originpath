@@ -12,10 +12,10 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-16 relative">
             {/* Scattered decorative elements */}
             <div className="absolute -top-8 left-1/4 text-foundation handwritten-sm opacity-60 transform -rotate-12">
-              "Big dreams"
+              &quot;Big dreams&quot;
             </div>
             <div className="absolute top-32 right-1/4 text-growth handwritten-sm opacity-60 transform rotate-6">
-              "Real results"
+              &quot;Real results&quot;
             </div>
             
             <h1 className="handwritten-title hero-title-sm md:hero-title-md lg:hero-title-lg xl:hero-title-xl font-bold text-notebook-dark mb-12 leading-[0.85]">
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
           {/* Call to Action */}
           <div className="text-center mb-16 relative">
             <div className="absolute -top-6 left-1/3 handwritten-sm text-enterprise opacity-70 transform rotate-8">
-              "Start here!"
+              &quot;Start here!&quot;
             </div>
             
             <button className="bg-growth text-white px-12 py-6 rounded-lg text-3xl handwritten-casual shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 -rotate-1 hover:rotate-0 border-2 border-notebook-dark">
@@ -65,7 +65,7 @@ const HomePage: React.FC = () => {
             {/* From Idea to Launch */}
             <div className="text-center p-8 relative">
               <div className="absolute -top-3 -right-3 handwritten-xs text-foundation opacity-60 transform rotate-12">
-                "Step 1"
+                &quot;Step 1&quot;
               </div>
               
               <div className="mb-6 flex justify-center">
@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
             {/* Scale & Grow */}
             <div className="text-center p-8 relative">
               <div className="absolute -top-3 -left-3 handwritten-xs text-growth opacity-60 transform -rotate-8">
-                "Step 2"
+                &quot;Step 2&quot;
               </div>
               
               <div className="mb-6 flex justify-center">
@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
             {/* Exit Successfully */}
             <div className="text-center p-8 relative">
               <div className="absolute -top-3 right-8 handwritten-xs text-scale opacity-60 transform rotate-6">
-                "Step 3"
+                &quot;Step 3&quot;
               </div>
               
               <div className="mb-6 flex justify-center">
@@ -144,10 +144,10 @@ const HomePage: React.FC = () => {
           {/* Social Proof */}
           <div className="text-center mb-16 relative">
             <div className="absolute -top-6 left-1/4 handwritten-sm text-enterprise opacity-60 transform -rotate-12">
-              "Real founders"
+              &quot;Real founders&quot;
             </div>
             <div className="absolute -top-2 right-1/4 handwritten-sm text-foundation opacity-60 transform rotate-8">
-              "Real results"
+              &quot;Real results&quot;
             </div>
             
             <h2 className="text-5xl handwritten-title text-notebook-dark mb-12 transform rotate-1">
@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
           {/* Services Preview */}
           <div className="text-center mb-16 relative">
             <div className="absolute -top-4 left-8 handwritten-sm text-growth opacity-60 transform rotate-15">
-              "Choose your path"
+              &quot;Choose your path&quot;
             </div>
             
             <h2 className="text-5xl handwritten-title text-notebook-dark mb-4 transform -rotate-0.5">
@@ -210,7 +210,7 @@ const HomePage: React.FC = () => {
           {/* Final CTA */}
           <div className="text-center relative">
             <div className="absolute -top-8 right-1/3 handwritten-sm text-scale opacity-70 transform -rotate-12">
-              "Your future starts now"
+              &quot;Your future starts now&quot;
             </div>
             
             <h2 className="text-4xl handwritten-title text-notebook-dark mb-6 transform rotate-0.5">

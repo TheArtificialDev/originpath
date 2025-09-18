@@ -7,7 +7,7 @@ export default function Contact() {
         {/* Scattered background elements for character */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 text-blue-300 handwritten-light text-lg transform -rotate-12 opacity-40">
-            💌 Let's Talk
+            💌 Let&apos;s Talk
           </div>
           <div className="absolute top-40 right-20 text-green-300 handwritten-light text-base transform rotate-15 opacity-30">
             • Connect • Collaborate •
@@ -41,7 +41,7 @@ export default function Contact() {
               Ready to transform your business idea into reality?
             </div>
             <p className="handwritten-body text-xl text-gray-600 max-w-2xl mx-auto">
-              Whether you're a startup founder, investor, or enterprise leader, we're here to help 
+              Whether you&apos;re a startup founder, investor, or enterprise leader, we&apos;re here to help 
               you navigate the digital transformation journey.
             </p>
           </div>
@@ -214,7 +214,7 @@ export default function Contact() {
               </h3>
               
               <p className="handwritten-body text-xl text-gray-700 mb-8 leading-relaxed">
-                From idea to execution, from startup to scale-up, we're here to be your 
+                From idea to execution, from startup to scale-up, we&apos;re here to be your 
                 strategic partner in the digital transformation journey.
               </p>
               

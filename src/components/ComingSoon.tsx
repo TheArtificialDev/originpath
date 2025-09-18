@@ -12,7 +12,7 @@ interface ComingSoonProps {
 
 export default function ComingSoon({ 
   pageTitle, 
-  description = "We're working hard to bring you something amazing!",
+  description = "We&apos;re working hard to bring you something amazing!",
   expectedDate = "Coming Soon"
 }: ComingSoonProps) {
   return (
@@ -75,7 +75,7 @@ export default function ComingSoon({
                           border-2 border-dashed border-blue-200 max-w-3xl mx-auto
                           transform hover:rotate-1 transition-all duration-300 hover:shadow-lg">
               <h3 className="handwritten-subtitle text-2xl text-blue-700 mb-6 transform -rotate-0.5">
-                What's Coming
+                What&apos;s Coming
               </h3>
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="space-y-3">
@@ -113,10 +113,10 @@ export default function ComingSoon({
             <div className="bg-white p-8 rounded-2xl shadow-xl border-2 border-gray-100 max-w-2xl mx-auto
                           transform hover:scale-105 transition-all duration-300">
               <h3 className="handwritten-subtitle text-2xl text-gray-800 mb-4 transform rotate-0.3">
-                Get Notified When It's Ready!
+                Get Notified When It&apos;s Ready!
               </h3>
               <p className="handwritten-body text-gray-600 mb-6">
-                Be the first to know when this page goes live. We'll send you an update!
+                Be the first to know when this page goes live. We&apos;ll send you an update!
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <input
@@ -135,7 +135,7 @@ export default function ComingSoon({
             {/* Navigation back */}
             <div className="space-y-4">
               <div className="handwritten-body text-gray-600 mb-6">
-                In the meantime, explore what's already available:
+                In the meantime, explore what&apos;s already available:
               </div>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link 
@@ -181,7 +181,7 @@ export default function ComingSoon({
             <div className="bg-yellow-100/80 p-6 rounded-lg border-2 border-dashed border-yellow-400 
                           transform hover:rotate-0.5 transition-all duration-300 max-w-xl mx-auto">
               <p className="handwritten-light text-gray-700 mb-3">
-                <span className="font-bold text-yellow-700">Questions?</span> We're here to help!
+                <span className="font-bold text-yellow-700">Questions?</span> We&apos;re here to help!
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <a 

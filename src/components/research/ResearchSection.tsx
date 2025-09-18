@@ -8,11 +8,10 @@ import ResearchCard from './ResearchCard';
 interface ResearchSectionProps {
   title: string;
   items: ResearchItem[];
-  category: string;
   exploreMoreUrl?: string;
 }
 
-export default function ResearchSection({ title, items, category, exploreMoreUrl }: ResearchSectionProps) {
+export default function ResearchSection({ title, items, exploreMoreUrl }: ResearchSectionProps) {
   if (items.length === 0) return null;
 
   return (

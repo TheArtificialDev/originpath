@@ -4,9 +4,6 @@ export const generatePlaceholderImageUrl = (title: string, width: number = 400, 
   const color = colors[colorIndex];
   const textColor = '#ffffff';
   
-  // Encode the title for URL safety
-  const encodedTitle = encodeURIComponent(title.slice(0, 30) + (title.length > 30 ? '...' : ''));
-  
   return `data:image/svg+xml;base64,${btoa(`
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
       <rect width="${width}" height="${height}" fill="${color}"/>
