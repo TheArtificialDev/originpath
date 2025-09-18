@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OriginPath - A Digital Notebook Experience",
+  title: "originpath.in - A Digital Notebook Experience",
   description: "Explore our notebook-style website with handwritten typography and page-turning animations",
 };
 

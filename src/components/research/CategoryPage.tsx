@@ -6,6 +6,7 @@ import { mockResearchItems, researchCategories } from '@/types/research';
 import ResearchCard from '@/components/research/ResearchCard';
 import SearchBar from '@/components/research/SearchBar';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 interface CategoryPageProps {
   categoryId: 'whitepapers' | 'industry-reports' | 'case-studies' | 'company-insights';
@@ -155,6 +156,7 @@ export default function CategoryPage({ categoryId }: CategoryPageProps) {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

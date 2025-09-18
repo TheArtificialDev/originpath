@@ -39,3 +39,59 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Documentation and Planning Files
+docs/
+*.md
+!README.md
+business_plan.*
+development_plan.*
+mvp_development_plan.*
+products_catalog.*
+site_flow.*
+planning/
+documentation/
+notes/
+design/
+wireframes/
+mockups/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+/coverage
+.nyc_output/
+junit.xml
+
+# Deployment
+.netlify
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Optional cache directories
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+
+# Temporary folders
+tmp/
+temp/
+
+# Additional log files
+logs/
+*.log

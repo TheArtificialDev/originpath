@@ -2,6 +2,7 @@
 
 import { ReactNode } from 'react';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 interface PageWrapperProps {
   children: ReactNode;
@@ -19,6 +20,9 @@ const PageWrapper = ({ children }: PageWrapperProps) => {
           {children}
         </main>
       </div>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

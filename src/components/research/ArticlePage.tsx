@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { mockResearchItems, researchCategories } from '@/types/research';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 interface ArticlePageProps {
   categoryId: 'whitepapers' | 'industry-reports' | 'case-studies' | 'company-insights';
@@ -50,6 +51,7 @@ export default function ArticlePage({ categoryId, slug }: ArticlePageProps) {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -234,6 +236,7 @@ export default function ArticlePage({ categoryId, slug }: ArticlePageProps) {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
