@@ -1,4 +1,5 @@
 import PageWrapper from '@/components/PageWrapper';
+import ContactForm from '@/components/ContactForm';
 
 export default function Contact() {
   return (
@@ -47,16 +48,76 @@ export default function Contact() {
           </div>
 
           {/* Main contact sections */}
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Contact Information */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Contact Form */}
             <div className="space-y-8">
-              {/* Direct Contact */}
               <div className="bg-gradient-to-br from-blue-50/80 to-green-50/80 p-8 rounded-2xl 
                             border-2 border-dashed border-blue-200 transform hover:-rotate-1 
                             transition-all duration-300 hover:shadow-lg relative overflow-hidden">
                 {/* Decorative elements */}
                 <div className="absolute top-3 right-6 w-4 h-4 bg-blue-300/30 rounded-full"></div>
                 <div className="absolute bottom-4 left-8 w-6 h-6 bg-green-400/20 rounded-full"></div>
+                
+                <div className="relative z-10">
+                  <h3 className="handwritten-subtitle text-2xl text-foundation mb-6 transform -rotate-0.5 flex items-center gap-3">
+                    <span className="text-3xl">📝</span>
+                    Send us a Message
+                  </h3>
+                  
+                  <ContactForm inquiryType="general" source="contact_page" />
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              {/* Direct Contact */}
+              <div className="bg-gradient-to-br from-purple-50/80 to-pink-50/80 p-8 rounded-2xl 
+                            border-2 border-dashed border-purple-200 transform hover:rotate-1 
+                            transition-all duration-300 hover:shadow-lg relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-3 right-6 w-4 h-4 bg-purple-300/30 rounded-full"></div>
+                <div className="absolute bottom-4 left-8 w-6 h-6 bg-pink-400/20 rounded-full"></div>
+                
+                <div className="relative z-10">
+                  <h3 className="handwritten-subtitle text-2xl text-foundation mb-6 transform -rotate-0.5 flex items-center gap-3">
+                    <span className="text-3xl">📞</span>
+                    Direct Contact
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="group">
+                      <p className="handwritten-body text-gray-600 mb-2">Email us directly:</p>
+                      <a 
+                        href="mailto:hello@originpath.in" 
+                        className="handwritten-subtitle text-xl text-foundation hover:text-scale 
+                                 transition-colors duration-300 group-hover:animate-pulse"
+                      >
+                        📧 hello@originpath.in
+                      </a>
+                    </div>
+                    
+                    <div className="group">
+                      <p className="handwritten-body text-gray-600 mb-2">Call us anytime:</p>
+                      <a 
+                        href="tel:+91-6362616467" 
+                        className="handwritten-subtitle text-xl text-foundation hover:text-scale 
+                                 transition-colors duration-300 group-hover:animate-pulse"
+                      >
+                        📱 +91 6362616467
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Office Information */}
+              <div className="bg-gradient-to-br from-amber-50/80 to-orange-50/80 p-8 rounded-2xl 
+                            border-2 border-dashed border-amber-200 transform hover:-rotate-1 
+                            transition-all duration-300 hover:shadow-lg relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-2 right-4 w-5 h-5 bg-amber-300/40 rounded-full"></div>
+                <div className="absolute bottom-3 left-6 w-3 h-3 bg-orange-400/30 rounded-full"></div>
                 
                 <div className="relative z-10">
                   <h3 className="handwritten-subtitle text-2xl text-foundation mb-6 transform -rotate-0.5 flex items-center gap-3">
@@ -123,20 +184,17 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* What to Expect */}
-            <div className="space-y-8">
               {/* Response Time */}
-              <div className="bg-gradient-to-br from-purple-50/80 to-pink-50/80 p-8 rounded-2xl 
-                            border-2 border-dashed border-purple-200 transform hover:-rotate-1 
+              <div className="bg-gradient-to-br from-green-50/80 to-teal-50/80 p-8 rounded-2xl 
+                            border-2 border-dashed border-green-200 transform hover:rotate-1 
                             transition-all duration-300 hover:shadow-lg relative overflow-hidden">
                 {/* Decorative elements */}
-                <div className="absolute top-4 right-3 w-4 h-4 bg-purple-300/40 rounded-full"></div>
-                <div className="absolute bottom-2 left-4 w-6 h-6 bg-pink-400/20 rounded-full"></div>
+                <div className="absolute top-3 right-5 w-5 h-5 bg-green-300/30 rounded-full"></div>
+                <div className="absolute bottom-4 left-3 w-4 h-4 bg-teal-400/40 rounded-full"></div>
                 
                 <div className="relative z-10">
-                  <h3 className="handwritten-subtitle text-2xl text-enterprise mb-6 transform -rotate-0.5 flex items-center gap-3">
+                  <h3 className="handwritten-subtitle text-2xl text-scale mb-6 transform rotate-0.5 flex items-center gap-3">
                     <span className="text-3xl">⚡</span>
                     Quick Response
                   </h3>
@@ -164,39 +222,6 @@ export default function Contact() {
                         <p className="handwritten-body text-gray-600">Meeting setup:</p>
                         <p className="handwritten-subtitle text-lg text-gray-800">Within 2-3 days</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Founder Connect */}
-              <div className="bg-gradient-to-br from-green-50/80 to-teal-50/80 p-8 rounded-2xl 
-                            border-2 border-dashed border-green-200 transform hover:rotate-1 
-                            transition-all duration-300 hover:shadow-lg relative overflow-hidden">
-                {/* Decorative elements */}
-                <div className="absolute top-3 right-5 w-5 h-5 bg-green-300/30 rounded-full"></div>
-                <div className="absolute bottom-4 left-3 w-4 h-4 bg-teal-400/40 rounded-full"></div>
-                
-                <div className="relative z-10">
-                  <h3 className="handwritten-subtitle text-2xl text-scale mb-6 transform rotate-0.5 flex items-center gap-3">
-                    <span className="text-3xl">👨‍💼</span>
-                    Meet Abhishek
-                  </h3>
-                  
-                  <div className="space-y-4">
-                    <p className="handwritten-body text-gray-700 leading-relaxed">
-                      As the founder of OriginPath, Abhishek brings 3x startup experience 
-                      and deep expertise in digital transformation.
-                    </p>
-                    
-                    <div className="space-y-2">
-                      <p className="handwritten-body text-gray-600 font-semibold">Perfect for discussing:</p>
-                      <ul className="handwritten-body text-gray-700 space-y-1">
-                        <li>• Business strategy & planning</li>
-                        <li>• Digital transformation roadmaps</li>
-                        <li>• Startup mentoring & guidance</li>
-                        <li>• Partnership opportunities</li>
-                      </ul>
                     </div>
                   </div>
                 </div>
